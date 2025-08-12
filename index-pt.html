@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jardim dos Montes Claros</title>
+  <!-- Google Fonts: Outfit (primary body font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== HEADER / TOP BAR ===== -->
+  <header class="top-bar">
+    <div class="logo-container">
+      <a href="#home">
+        <img src="resources/Logo.png" alt="Logótipo JAMC" class="logo" />
+      </a>
+      <!-- <span class="site-title">Jardim Autóctone<br>dos Montes Claros</span> -->
+    </div>
+
+    <!-- Navegação Desktop -->
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#team">Equipa</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Seletor de idioma -->
+    <nav class="language-switcher">
+      <a href="index-1.1.html">EN</a> | <a href="index-pt.html">PT</a>
+    </nav>
+
+    <!-- Botão do menu móvel -->
+    <button class="menu-toggle" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+      ☰
+    </button>
+  </header>
+
+  <!-- ===== MENU MÓVEL ===== -->
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Navegação móvel">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#team">Equipa</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main>
+   <section id="home">
+      <img class="section-image" src="images/balcony.webp" alt="Descrição" />
+      <h2>Bem-vindo ao Jardim dos Montes Claros</h2>
+      <p>Prestamos serviços ecológicos inovadores para apoiar o desenvolvimento sustentável e a restauração ambiental.</p>
+    </section>
+
+    <section id="about">
+      <img class="section-image" src="images/kitchen.webp" alt="Descrição" />
+      <h2>Sobre Nós</h2>
+      <p>O EcoBalance dedica-se à restauração de ecossistemas, melhoria da biodiversidade e consultoria especializada em gestão ecológica.</p>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="services-layout">
+        <img class="services-image" src="images/balcony.webp" alt="Os Nossos Serviços" />
+        <div class="services-text">
+          <h2>Os Nossos Serviços</h2>
+          <ul>
+            <li>Restauração de Habitats</li>
+            <li>Avaliações Ecológicas</li>
+            <li>Gestão de Espécies Invasoras</li>
+            <li>Consultoria em Sustentabilidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projetos</h2>
+      <div class="projects-images">
+        <img class="project-image" src="images/kitchen.webp" alt="Antes" />
+        <img class="project-image" src="images/balcony.webp" alt="Depois" />
+      </div>
+      <p>Realizámos diversos projetos, desde a reabilitação de zonas húmidas até à conservação de corredores florestais.</p>
+    </section>
+
+    <section id="team" class="team-section">
+      <h2>Equipa</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img class="team-photo" src="images/kitchen.webp" alt="Membro da Equipa 1" />
+          <p>Jane Doe<br>Ecologista</p>
+        </div>
+        <div class="team-member">
+          <img class="team-photo" src="images/balcony.webp" alt="Membro da Equipa 2" />
+          <p>John Smith<br>Biólogo</p>
+        </div>
+        <!-- Adicione mais membros conforme necessário -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <img class="section-image" src="images/balcony.webp" alt="Descrição" />
+      <h2>Contacto</h2>
+      <p>Email: info@ecobalance.org<br />Telefone: (123) 456-7890<br />Localização: 123 Greenway Blvd, EcoCity</p>
+    </section>
+</main>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Scroll suave para âncoras
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        document.getElementById('mobile-menu').classList.remove('active');
+        document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Funcionalidade do menu móvel
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
