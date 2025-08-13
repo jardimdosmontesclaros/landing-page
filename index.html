@@ -1,164 +1,61 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jardim dos Montes Claros</title>
-  <!-- Google Fonts: Outfit (primary body font) -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- ===== HEADER / TOP BAR ===== -->
-  <header class="top-bar">
-    <div class="logo-container">
-      <a href="#home">
-        <img src="resources/Logo.png" alt="JAMC Logo" class="logo" />
-      </a>
-      <!-- <span class="site-title">Jardim Autóctone<br>dos Montes Claros</span> -->
-    </div>
-
-    <!-- Desktop Navigation -->
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- Language Switcher -->
-    <nav class="language-switcher">
-      <a href="index.html">EN</a> | <a href="index-pt.html">PT</a>
-    </nav>
-
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-      ☰
-    </button>
-  </header>
-
-  <!-- ===== MOBILE DROPDOWN MENU ===== -->
-  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== MAIN CONTENT ===== -->
-  <main>
-   <section id="home">
-      <img class="section-image" src="images/balcony.webp" alt="Description" />
-      <h2>Welcome to the Jardim dos Montes Claros</h2>
-      <p>We provide innovative ecological services to support sustainable development and environmental restoration.</p>
-    </section>
-
-    <section id="about">
-      <img class="section-image" src="images/kitchen.webp" alt="Description" />
-      <h2>About Us</h2>
-      <p>EcoBalance is dedicated to restoring ecosystems, improving biodiversity, and providing expert consultation in ecological stewardship.</p>
-    </section>
-
-    <!-- <section id="services">
-      <img class="section-image" src="path/to/your-image.jpg" alt="Description" />
-      <h2>Our Services</h2>
-      <ul>
-        <li>Habitat Restoration</li>
-        <li>Ecological Assessments</li>
-        <li>Invasive Species Management</li>
-        <li>Sustainability Consulting</li>
-      </ul>
-    </section> -->
-
-    <section id="services" class="services-section">
-      <div class="services-layout">
-        <img class="services-image" src="images/balcony.webp" alt="Our Services" />
-        <div class="services-text">
-          <h2>Our Services</h2>
-          <ul>
-            <li>Habitat Restoration</li>
-            <li>Ecological Assessments</li>
-            <li>Invasive Species Management</li>
-            <li>Sustainability Consulting</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="projects">
-      <img class="section-image" src="path/to/your-image.jpg" alt="Description" />
-      <h2>Projects</h2>
-      <p>We’ve worked on a variety of projects ranging from wetlands rehabilitation to forest corridor conservation.</p>
-    </section> -->
-
-    <section id="projects" class="projects-section">
-      <h2>Projects</h2>
-      <div class="projects-images">
-        <img class="project-image" src="images/kitchen.webp" alt="Before" />
-        <img class="project-image" src="images/balcony.webp" alt="After" />
-      </div>
-      <p>We’ve worked on a variety of projects ranging from wetlands rehabilitation to forest corridor conservation.</p>
-    </section>
-
-    <!-- <section id="team">
-      <img class="section-image" src="path/to/your-image.jpg" alt="Description" />
-      <h2>Meet the Team</h2>
-      <p>Our interdisciplinary team consists of ecologists, biologists, and environmental engineers passionate about nature.</p>
-    </section> -->
-
-    <section id="team" class="team-section">
-      <h2>Meet the Team</h2>
-      <div class="team-members">
-        <div class="team-member">
-          <img class="team-photo" src="images/kitchen.webp" alt="Team Member 1" />
-          <p>Jane Doe<br>Ecologist</p>
-        </div>
-        <div class="team-member">
-          <img class="team-photo" src="images/balcony.webp" alt="Team Member 2" />
-          <p>John Smith<br>Biologist</p>
-        </div>
-        <!-- Add more team members as needed -->
-      </div>
-    </section>
-
-    <section id="contact">
-      <img class="section-image" src="images/balcony.webp" alt="Description" />
-      <h2>Contact Us</h2>
-      <p>Email: info@ecobalance.org<br />Phone: (123) 456-7890<br />Location: 123 Greenway Blvd, EcoCity</p>
-    </section>
-</main>
-
-  <!-- ===== SCRIPTS ===== -->
-  <script>
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-        document.getElementById('mobile-menu').classList.remove('active');
-        document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // Mobile menu toggle functionality
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-      menuToggle.setAttribute('aria-expanded', !expanded);
-      mobileMenu.classList.toggle('active');
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jardim Autóctone dos Montes Claros</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        background-color: #fff;
+        background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
+        color: #222;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        padding: 1rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin: 0;
+      }
+      @media screen and (max-width: 480px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      h1::after {
+        content: "";
+        background-color: #ffe800;
+        background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
+        display: block;
+        height: 0.5rem;
+        margin-top: 1rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      p {
+        margin: 1rem 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>jardimdosmontesclaros.pt</h1>
+      <p>Our website is under construction.</p>
+    </main>
+  </body>
 </html>
