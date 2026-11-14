@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visão de Futuro | Jardins Claros — Jardim dos Montes Claros</title>
+  <meta name="description" content="Conceito da visão a longo prazo para a herdade botânica, viveiro e ecoturismo regenerativo nos Montes Claros.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/editorial.css">
+  <link rel="stylesheet" href="css/nursery.css">
+  <link rel="stylesheet" href="css/trails.css">
+</head>
+<body>
+
+  <!-- ==================== VISION CONCEPT BANNER ==================== -->
+  <div style="background: var(--forest-900); color: var(--parchment-50); padding: 0.75rem 1rem; font-size: 0.85rem; text-align: center; border-bottom: 1px solid rgba(212, 160, 67, 0.4); display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>🔭 <strong>Portal da Visão de Futuro:</strong> Esta página reflete o horizonte conceptual a longo prazo da herdade.</span>
+    <a href="index.html" style="background: var(--gold-500); color: var(--forest-900); font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; text-decoration: none; font-size: 0.8rem;">
+      ← Ver o Site Atual (MVP com 2 Anos)
+    </a>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Jardins Claros - Início">
+        <div class="brand-emblem">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L12 22"/>
+            <path d="M17 5C17 5 13 8 13 13C13 18 17 21 17 21"/>
+            <path d="M7 5C7 5 11 8 11 13C11 18 7 21 7 21"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          Jardins Claros
+          <small>Quinta Botânica • Desde 1892</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="passado.html" class="nav-link">O Nosso Passado</a>
+        <a href="viveiro.html" class="nav-link">Viveiro Autóctone</a>
+        <a href="floresta-turismo.html" class="nav-link">Floresta & Trilhos</a>
+        <a href="floresta-turismo.html#experiencias" class="nav-link">Experiências</a>
+        <a href="floresta-turismo.html#visita" class="nav-link">Planear Visita</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Soundscape ambient toggle -->
+        <button class="soundscape-toggle" title="Ativar paisagem sonora da floresta">
+          <div class="sound-waves">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-label">Ouvir a Floresta</span>
+        </button>
+
+        <!-- Language toggle -->
+        <div class="lang-switch">
+          <button class="lang-btn active">PT</button>
+          <span>/</span>
+          <button class="lang-btn">EN</button>
+        </div>
+
+        <button class="btn btn-terracotta btn-sm open-booking-btn" data-experience="tour">
+          Reservar Visita
+        </button>
+
+        <button class="mobile-toggle" aria-label="Abrir Menu Móvel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="heritage-hero" style="background-image: linear-gradient(to bottom, rgba(17, 32, 21, 0.65) 0%, rgba(17, 32, 21, 0.88) 100%), url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1920&q=80');">
+    <div class="heritage-hero-content">
+      <span class="eyebrow" style="color: var(--gold-300);">Santuário Botânico & Floresta Viva</span>
+      <h1>Onde a Floresta Ancestral e o Futuro da Terra se Encontram</h1>
+      <p>
+        45 hectares de sobreirais seculares, pinhais mansos e nascentes de água pura. Um viveiro dedicado à propagação ética da flora autóctone e um refúgio de turismo sereno na costa atlântica.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="viveiro.html" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2zm0 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 6v6l4 2"/></svg>
+          Catálogo do Viveiro Autóctone
+        </a>
+        <a href="floresta-turismo.html" class="btn btn-outline-light">
+          Trilhos & Experiências na Quinta
+        </a>
+      </div>
+
+      <!-- Quick Stats Strip -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; margin-top: 4.5rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+        <div>
+          <span style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--gold-300); display: block;">1892</span>
+          <span style="font-size: 0.8rem; color: var(--sage-100); text-transform: uppercase; letter-spacing: 0.08em;">Fundação Histórica</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--gold-300); display: block;">45 ha</span>
+          <span style="font-size: 0.8rem; color: var(--sage-100); text-transform: uppercase; letter-spacing: 0.08em;">Mata Protegida</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--gold-300); display: block;">120+</span>
+          <span style="font-size: 0.8rem; color: var(--sage-100); text-transform: uppercase; letter-spacing: 0.08em;">Espécies Autóctones</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--gold-300); display: block;">320</span>
+          <span style="font-size: 0.8rem; color: var(--sage-100); text-transform: uppercase; letter-spacing: 0.08em;">Anos do Sobreiro Patriarca</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Descobrir</span>
+      <svg class="scroll-indicator-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==================== EDITORIAL SPOTLIGHT: O NOSSO PASSADO ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo I • Memória & Raízes</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">Património e Defesa Ecológica</span>
+        <h2>Um Refúgio Vivo que a História Pede para Ser Guardado</h2>
+        <p>
+          Tal como os grandes pinhais e quintas históricas que moldaram a paisagem da costa, Jardins Claros resistiu ao avanço do cimento para manter de pé a última memória da floresta mediterrânica primitiva.
+        </p>
+      </div>
+
+      <div class="grid-2" style="align-items: center; margin-bottom: 4rem;">
+        <div>
+          <p class="lead-text" style="margin-bottom: 1.5rem;">
+            «Quem planta um sobreiro ou cuida de um pinheiro centenário não trabalha para si mesmo, mas para o sopro dos séculos vindouros.»
+          </p>
+          <p style="margin-bottom: 1.25rem;">
+            Fundada nos finais do século XIX como herdade de experimentação botânica, a propriedade cruzou gerações mantendo intacto o seu sistema tradicional de levadas em pedra, os sobreiros que abrigam aves raras e as estufas de ferro forjado onde germinavam as primeiras sementes de espécies autóctones.
+          </p>
+          <p style="margin-bottom: 2rem;">
+            Inspirada pelos movimentos cívicos de salvaguarda do património natural — que ensinam que o passado não se apaga, antes se honra e cuida — Jardins Claros abre hoje as suas portas para que cada visitante se torne também um guardião da floresta.
+          </p>
+          <a href="passado.html" class="btn btn-outline">
+            Conhecer a História Completa & Arquivo Fotográfico →
+          </a>
+        </div>
+
+        <div class="archival-photo-frame" style="margin: 0;">
+          <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Sobreiro Secular em Jardins Claros">
+          <div class="archival-caption">
+            <span>O Sobreiro Patriarca • 320 anos sob plano de conservação</span>
+            <span class="archival-caption-badge">Património Botânico</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote>
+          “Preservar esta floresta é proteger a nossa água, o nosso ar e o chão onde as futuras gerações aprenderão a amar a natureza.”
+        </blockquote>
+        <cite>Registo do Livro de Honra da Herdade, 1924</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NURSERY SHOWCASE ==================== -->
+  <section class="section bg-parchment">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Viveiro Especializado</span>
+        <h2>Plantas Nativas para Jardins com Alma & Futuro</h2>
+        <p>
+          As espécies autóctones portuguesas evoluíram ao longo de milénios para resistir ao calor e à seca, exigindo pouca água e convidando de volta borboletas, abelhas e pássaros canoros.
+        </p>
+      </div>
+
+      <!-- Quick Filter Pills for Homepage Preview -->
+      <div style="display: flex; justify-content: center; gap: 0.65rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+        <button class="filter-pill active" data-filter-type="all">Todas as Nativas</button>
+        <button class="filter-pill" data-filter-type="tree">Árvores Nobres</button>
+        <button class="filter-pill" data-filter-type="shrub">Arbustos & Bagas</button>
+        <button class="filter-pill" data-filter-type="aromatic">Aromáticas & Melíferas</button>
+      </div>
+
+      <!-- Plant Grid (Rendered by JS) -->
+      <div class="grid-3" id="plant-grid-container">
+        <!-- Injected via js/nursery.js -->
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="viveiro.html" class="btn btn-primary">
+          Explorar o Catálogo Completo & Fichas de Cultivo (12+ Espécies) →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCES & TOURISM (Concannon & National Trust) ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Hospitalidade na Natureza</span>
+        <h2>Experiências Únicas entre a Copa dos Pinheiros</h2>
+        <p>
+          Desacelere o ritmo urbano. Desfrute de caminhadas guiadas por botânicos, piqueniques sob a sombra perfumada de pinheiros-mansos e infusões preparadas com plantas da nossa mata.
+        </p>
+      </div>
+
+      <!-- Featured Experience 1 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80" alt="Piquenique na floresta">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Gastronomia & Lazer</span>
+          <h3>Piquenique Gourmet na Sombra dos Pinhais</h3>
+          <p>
+            Um cesto de verga artesanal preparado com pães de fermentação lenta, queijos artesanais de pequenos produtores, azeitonas marinadas em alecrim da quinta, fruta de época e infusão gelada de murta e limão silvestre.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🧺 Cesto completo para 2 pessoas</span>
+            <span class="experience-perk-item">🌲 Recanto privativo no pinhal</span>
+            <span class="experience-perk-item">🍷 Opção de vinho local biológico</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€65 <span>/ cesto p/ 2</span></div>
+            <button class="btn btn-terracotta btn-sm open-booking-btn" data-experience="picnic">Reservar Cesto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Experience 2 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80" alt="Estufas e prova botânica">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Ciência & Degustação</span>
+          <h3>Passeio Botânico Guiado & Degustação da Floresta</h3>
+          <p>
+            Caminhe durante 2 horas com um dos nossos mestres jardineiros ao longo das levadas e sobreirais. Descubra como distinguir as espécies da charneca mediterrânica e termine com uma degustação de méis bravos e chás nativos na Casa de Chá das Estufas.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🌿 Guia botânico especializado</span>
+            <span class="experience-perk-item">🫖 Prova de infusões & méis</span>
+            <span class="experience-perk-item">🌱 Caderno de campo incluído</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€28 <span>/ pessoa</span></div>
+            <button class="btn btn-primary btn-sm open-booking-btn" data-experience="tour">Reservar Visita</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="floresta-turismo.html" class="btn btn-outline">
+          Ver Todas as 4 Experiências, Trilhos & Mapa Interativo →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CIVIC & CONSERVATION MANIFESTO ==================== -->
+  <section class="section bg-forest-dark">
+    <div class="container">
+      <div class="manifesto-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <span class="eyebrow" style="color: var(--gold-300);">Compromisso para com o Futuro</span>
+        <h2 style="color: #ffffff; margin-bottom: 1.5rem;">Apadrinhe uma Árvore Nativa na Nossa Mata</h2>
+        <p style="color: var(--sage-100); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem;">
+          Por cada sobreiro ou zambujeiro plantado na herdade, contribuímos diretamente para a criação de um corredor ecológico resiliente ao fogo, rico em água e protegido contra a especulação imobiliária. Junte-se ao nosso Círculo de Guardiões da Floresta.
+        </p>
+
+        <div class="manifesto-pillars">
+          <div class="pillar-item">
+            <h5>Certificado & Coordenadas GPS</h5>
+            <p>Receba a certidão formal da sua árvore e as coordenadas geográficas para a poder visitar quando desejar.</p>
+          </div>
+          <div class="pillar-item">
+            <h5>Relatório Fotográfico Anual</h5>
+            <p>Acompanhe o crescimento e florescimento da muda registado pela equipa técnica do viveiro.</p>
+          </div>
+          <div class="pillar-item">
+            <h5>Passe Livre nos Trilhos</h5>
+            <p>Acesso gratuito e ilimitado para toda a família aos trilhos e eventos sazonais de Jardins Claros.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+          <button class="btn btn-terracotta" onclick="window.showToast('🌳 Obrigado pelo seu interesse! O programa de apadrinhamento abre novas vagas a cada estação.')">
+            Apadrinhar um Sobreiro (€50 / ano)
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PLAN YOUR VISIT STRIP ==================== -->
+  <section class="section bg-sage-tint">
+    <div class="container">
+      <div class="grid-3" style="align-items: center;">
+        <div>
+          <span class="eyebrow forest">Informações Práticas</span>
+          <h3>Planear a Sua Chegada</h3>
+          <p>A apenas 25 minutos de Lisboa e a 10 minutos de Cascais. Aberto de terça-feira a domingo.</p>
+        </div>
+        <div style="border-left: 2px solid var(--sage-300); padding-left: 1.5rem;">
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--forest-900);">Horários da Quinta & Viveiro</h4>
+          <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Terça a Sexta:</strong> 09h30 – 18h00</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Sábados & Domingos:</strong> 09h00 – 19h00</p>
+          <p style="font-size: 0.85rem; color: var(--bark-500);">Segunda-feira: Manutenção e conservação das estufas.</p>
+        </div>
+        <div style="border-left: 2px solid var(--sage-300); padding-left: 1.5rem;">
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--forest-900);">Acessos & Sustentabilidade</h4>
+          <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">🚆 Estação de comboios mais próxima a 1.2 km (ligação por ciclovia).</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">⚡ Postos de carregamento para veículos elétricos no parque.</p>
+          <p style="font-size: 0.95rem;">🐾 Amigo dos animais (animais com trela bem-vindos nos trilhos exteriores).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FLOATING PLAN PILL ==================== -->
+  <button class="planting-plan-pill" aria-label="Abrir Plano de Plantação">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L12 22"/><path d="M17 5C17 5 13 8 13 13C13 18 17 21 17 21"/><path d="M7 5C7 5 11 8 11 13C11 18 7 21 7 21"/></svg>
+    <span>Meu Plano</span>
+    <span class="plan-count-badge">0</span>
+  </button>
+
+  <!-- ==================== PLANTING PLAN DRAWER ==================== -->
+  <aside class="plan-drawer" id="planting-plan-drawer">
+    <div class="plan-drawer-header">
+      <h3>Plano de Plantação</h3>
+      <button id="close-plan-drawer" style="color: #ffffff; font-size: 1.5rem;">✕</button>
+    </div>
+    <div class="plan-drawer-body" id="plan-items-list">
+      <!-- Injected via js/nursery.js -->
+    </div>
+    <div class="plan-drawer-footer">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem;">
+        <span style="font-weight: 600; color: var(--bark-700);">Total Estimado:</span>
+        <span id="plan-total-amount" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; color: var(--forest-900);">€0.00</span>
+      </div>
+      <button class="btn btn-primary" id="plan-submit-btn" style="width: 100%;" onclick="window.showToast('📋 Pedido de reserva enviado para os mestres horticultores do viveiro!')">
+        Solicitar Reserva de Mudas no Viveiro
+      </button>
+      <small style="display: block; text-align: center; color: var(--bark-500); margin-top: 0.5rem; font-size: 0.75rem;">
+        Sem compromisso. Entraremos em contacto para agendamento de recolha ou entrega.
+      </small>
+    </div>
+  </aside>
+
+  <!-- ==================== PLANT DETAIL DIALOG ==================== -->
+  <dialog class="modal-dialog" id="plant-detail-dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="close-plant-dialog" aria-label="Fechar">✕</button>
+      <div id="plant-modal-body">
+        <!-- Injected via js/nursery.js -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==================== BOOKING WIZARD DIALOG ==================== -->
+  <dialog class="modal-dialog" id="booking-dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="close-booking-dialog" aria-label="Fechar">✕</button>
+      
+      <div class="booking-step-indicator">
+        <div class="step-bubble active">1</div>
+        <div class="step-bubble">2</div>
+        <div class="step-bubble">3</div>
+      </div>
+
+      <!-- Step 1: Experience & Date -->
+      <div class="booking-form-step active" data-step="1">
+        <span class="eyebrow">Passo 1 de 3</span>
+        <h3 style="margin-bottom: 1.5rem;">Escolher Experiência & Data</h3>
+
+        <div class="form-group">
+          <label for="book-experience-select">Experiência Desejada</label>
+          <select id="book-experience-select" class="form-control">
+            <option value="tour">Passeio Botânico Guiado & Degustação (€28/pessoa)</option>
+            <option value="workshop">Workshop de Propagação no Viveiro (€45/pessoa)</option>
+            <option value="picnic">Piquenique Gourmet nos Pinhais (€65/cesto p/ 2)</option>
+            <option value="night">Imersão Noturna & Fauna Silvestre (€35/pessoa)</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="book-date-input">Data da Visita</label>
+            <input type="date" id="book-date-input" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="book-time-select">Horário</label>
+            <select id="book-time-select" class="form-control">
+              <option value="10:30">10h30 (Manhã)</option>
+              <option value="14:30">14h30 (Tarde)</option>
+              <option value="17:00">17h00 (Pôr-do-Sol)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="book-guests-input">Número de Participantes</label>
+          <input type="number" id="book-guests-input" class="form-control" value="2" min="1" max="12">
+        </div>
+
+        <div style="text-align: right; margin-top: 2rem;">
+          <button class="btn btn-primary" onclick="nextBookingStep(1)">
+            Continuar para Dados Pessoais →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Personal Details -->
+      <div class="booking-form-step" data-step="2">
+        <span class="eyebrow">Passo 2 de 3</span>
+        <h3 style="margin-bottom: 1.5rem;">Os Seus Dados para Confirmação</h3>
+
+        <div id="booking-step2-summary" class="booking-summary-box">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="form-group">
+          <label for="book-name-input">Nome Completo</label>
+          <input type="text" id="book-name-input" class="form-control" placeholder="Ex: Maria Santos">
+        </div>
+
+        <div class="form-group">
+          <label for="book-email-input">Endereço de Email</label>
+          <input type="email" id="book-email-input" class="form-control" placeholder="maria@exemplo.pt">
+        </div>
+
+        <div class="form-group">
+          <label for="book-notes-input">Restrições Alimentares ou Pedidos Especiais (Opcional)</label>
+          <textarea id="book-notes-input" class="form-control" rows="2" placeholder="Vegetariano, mobilidade reduzida, etc."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+          <button class="btn btn-outline" onclick="openBookingStep(1)">← Voltar</button>
+          <button class="btn btn-terracotta" onclick="nextBookingStep(2)">Confirmar Pré-Reserva</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Confirmation -->
+      <div class="booking-form-step" data-step="3">
+        <div id="booking-confirmation-details">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <div class="brand-emblem" style="background: rgba(255, 255, 255, 0.1); color: var(--gold-300);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L12 22"/><path d="M17 5C17 5 13 8 13 13C13 18 17 21 17 21"/><path d="M7 5C7 5 11 8 11 13C11 18 7 21 7 21"/></svg>
+            </div>
+            Jardins Claros
+          </div>
+          <p>
+            Quinta botânica, viveiro especializado em flora autóctone mediterrânica e floresta secular protegida. Um tributo contínuo à beleza da terra viva.
+          </p>
+          <div class="footer-certifications">
+            <span class="footer-cert-pill">🌿 Flora 100% Autóctone</span>
+            <span class="footer-cert-pill">🐝 Zona Refúgio de Polinizadores</span>
+            <span class="footer-cert-pill">💧 Agricultura de Baixo Consumo Hídrico</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="passado.html">O Nosso Passado</a></li>
+            <li><a href="viveiro.html">Viveiro de Nativas</a></li>
+            <li><a href="floresta-turismo.html">Trilhos da Floresta</a></li>
+            <li><a href="floresta-turismo.html#experiencias">Experiências & Visitas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto & Visitas</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+351219000000">+351 219 000 000</a></li>
+            <li><a href="mailto:info@jardinsclaros.pt">info@jardinsclaros.pt</a></li>
+            <li style="color: var(--sage-300); font-size: 0.9rem; margin-top: 0.5rem;">
+              Estrada das Levadas, 42<br>
+              2775 Carcavelos / Sintra, Portugal
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Caderno da Floresta</h4>
+          <p>Receba sazonalmente conselhos práticos de jardinagem nativa, épocas de sementeira e novidades da herdade.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('🌱 Bem-vindo ao Caderno da Floresta!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="O seu melhor email" required>
+            <button type="submit" class="btn btn-terracotta btn-sm">Subscrever</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jardins Claros — Quinta Botânica & Viveiro da Floresta. Todos os direitos reservados.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#" onclick="event.preventDefault(); window.showToast('Regulamento de visita e conservação botânica.');">Termos de Visita</a>
+          <a href="#" onclick="event.preventDefault(); window.showToast('Privacidade respeitada integralmente.');">Privacidade</a>
+          <a href="passado.html">Manifesto Ecológico</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/nursery.js"></script>
+  <script src="js/trails-booking.js"></script>
+</body>
+</html>

@@ -1,61 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardim dos Montes Claros | Jardim-Floresta com 2 Anos & Regeneração no Oeste</title>
+  <meta name="description" content="Um jardim-floresta pioneiro com 2 anos inserido numa propriedade de 2 hectares em Montes Claros (Lourinhã). 675 árvores e arbustos nativos, método Miyawaki adaptado e estudo comparativo de regeneração na região Oeste de Portugal.">
+  
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="images/logo/logo.png">
+  <link rel="apple-touch-icon" href="images/logo/logo.png">
+  <meta name="theme-color" content="#112015">
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jardim Autóctone dos Montes Claros</title>
-    <style>
-      html, body {
-        height: 100%;
-      }
-      body {
-        background-color: #fff;
-        background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
-        color: #222;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      main {
-        padding: 1rem;
-        text-align: center;
-      }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        margin: 0;
-      }
-      @media screen and (max-width: 480px) {
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
-      h1::after {
-        content: "";
-        background-color: #ffe800;
-        background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-        display: block;
-        height: 0.5rem;
-        margin-top: 1rem;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      p {
-        margin: 1rem 0 0 0;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>jardimdosmontesclaros.pt</h1>
-      <p>Our website is under construction.</p>
-    </main>
-  </body>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mvp.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER (CLEAN & LIGHTWEIGHT) ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Jardim dos Montes Claros - Início">
+        <img src="images/logo/logo.png" alt="Logo Jardim dos Montes Claros" class="brand-logo-img">
+        <div class="brand-text">
+          Jardim dos Montes Claros
+          <small>Lourinhã • Oeste de Portugal</small>
+        </div>
+      </a>
+
+      <!-- Streamlined Navigation (Redundant links removed) -->
+      <nav class="nav-links">
+        <a href="#dois-anos" class="nav-link">O Jardim aos 2 Anos</a>
+        <a href="#dois-hectares" class="nav-link">Os 2 Hectares</a>
+        <a href="#estudo" class="nav-link">Estudo Comparativo</a>
+        <a href="#especies" class="nav-link">Espécies Autóctones</a>
+        <a href="#voluntariado" class="nav-link">Voluntariado</a>
+      </nav>
+
+      <!-- Minimal Toolbox (Lightweight: Participar & LinkedIn moved to body) -->
+      <div class="nav-actions">
+        <button class="soundscape-toggle" title="Ativar paisagem sonora da floresta">
+          <div class="sound-waves">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-label">Som da Floresta</span>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Abrir Menu Móvel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="mvp-hero">
+    <div class="mvp-hero-content">
+      
+      <!-- ODSlocal Official Registration Badge -->
+      <a href="https://odslocal.pt/projetos/jardim-autoctone-dos-montes-claros-2318" target="_blank" rel="noopener noreferrer" class="mvp-hero-badge" style="text-decoration: none;">
+        <span class="pulse-dot"></span>
+        Registo ODSlocal Lourinhã (#2318) • 2 Anos de Crescimento
+      </a>
+
+      <h1>
+        Da Terra ao Bosque:<br>
+        O Nosso Primeiro <span class="highlight">Jardim-Floresta</span> com 2 Anos
+      </h1>
+
+      <p class="lead">
+        Numa propriedade de <strong>2 hectares</strong> rodeada pela paisagem rural do Oeste português (Montes Claros, Lourinhã), plantámos em novembro de 2024 uma micro-floresta pioneira de <strong>450 m²</strong> com <strong>675 plantas autóctones</strong>. Hoje, é um laboratório vivo onde a comunidade e a ecologia comprovam a regeneração acelerada do solo.
+      </p>
+
+      <div class="mvp-hero-actions">
+        <a href="#dois-anos" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2zm0 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 6v6l4 2"/></svg>
+          Ver o Jardim aos 2 Anos
+        </a>
+        <a href="#dois-hectares" class="btn btn-outline-light">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          Mapeamento dos 2 Hectares
+        </a>
+        <a href="#voluntariado" class="btn btn-terracotta">
+          🌱 Voluntariado & Comunidade
+        </a>
+      </div>
+
+      <!-- Real Metrics KPI Bar -->
+      <div class="kpi-strip">
+        <div class="kpi-item">
+          <div class="kpi-number">2 ha</div>
+          <div class="kpi-label">Propriedade</div>
+          <div class="kpi-sub">Oeste rural de Portugal</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-number">2 Anos</div>
+          <div class="kpi-label">De Idade</div>
+          <div class="kpi-sub">Plantado a Nov. 2024</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-number">450 m²</div>
+          <div class="kpi-label">Jardim-Floresta</div>
+          <div class="kpi-sub">Núcleo denso Miyawaki</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-number">675</div>
+          <div class="kpi-label">Plantas Nativas</div>
+          <div class="kpi-sub">Árvores & arbustos locais</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-number">30+</div>
+          <div class="kpi-label">Espécies</div>
+          <div class="kpi-sub">Flora estritamente autóctone</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-number">30+</div>
+          <div class="kpi-label">Voluntários</div>
+          <div class="kpi-sub">Plantado em comunidade</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EMBEDDED LINKEDIN SOCIAL CARD ==================== -->
+  <section class="section" style="padding-top: 2.5rem; padding-bottom: 2.5rem;">
+    <div class="container">
+      <div class="linkedin-embed-card">
+        <div class="linkedin-embed-topbar">
+          <div class="linkedin-logo-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn • Página Oficial da Comunidade</span>
+          </div>
+          <span style="font-size: 0.72rem; color: #667085;">Atualizações do Terreno</span>
+        </div>
+
+        <div class="linkedin-embed-content">
+          <div class="linkedin-embed-avatar">
+            <img src="images/logo/logo.png" alt="Logo Jardim dos Montes Claros">
+          </div>
+          <div class="linkedin-embed-info">
+            <div class="linkedin-embed-title">
+              Jardim dos Montes Claros
+              <span class="linkedin-verified-badge" title="Página Verificada">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#0a66c2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </span>
+            </div>
+            <div class="linkedin-embed-subtitle">
+              Conservação da Natureza & Regeneração de Solos • Montes Claros, Lourinhã • 2 ha
+            </div>
+            <div class="linkedin-embed-bio">
+              Acompanhe a evolução fotográfica das 675 árvores e arbustos nativos, relatórios empíricos de crescimento aos 2 anos e o anúncio das próximas jornadas de voluntariado no Oeste rural.
+            </div>
+          </div>
+        </div>
+
+        <div class="linkedin-embed-footer">
+          <div style="font-size: 0.82rem; color: #475467;">
+            📍 Conecte-se com a equipa fundadora (Miguel e Rita) e voluntários
+          </div>
+          <a href="https://www.linkedin.com/company/jardim-dos-montes-claros" target="_blank" rel="noopener noreferrer" class="linkedin-follow-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Seguir Página no LinkedIn →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO I: O CONTEXTO & O COMEÇO ==================== -->
+  <section class="section" id="origem">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo I • Origem & Propósito</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">Montes Claros • Lourinhã</span>
+        <h2>Criar Raízes onde o Vento do Atlântico Encontra a Terra de Sequeiro</h2>
+        <p>
+          O Jardim dos Montes Claros nasceu da vontade de responder à degradação dos solos agrícolas e à perda de cobertura florestal nativa na região Oeste de Portugal.
+        </p>
+      </div>
+
+      <div class="grid-2" style="align-items: center; margin-bottom: 3.5rem;">
+        <div>
+          <p class="lead-text" style="margin-bottom: 1.5rem;">
+            «Não herdámos uma herdade histórica centenária: começámos do zero, com pás na mão, amigos à volta e a convicção de que 2 hectares podem ser uma centelha de regeneração para toda uma região.»
+          </p>
+          <p style="margin-bottom: 1.25rem;">
+            A <strong>23 de novembro de 2024</strong>, o Miguel e a Rita reuniram mais de 30 voluntários — amigos, vizinhos e famílias apaixonadas pela natureza — em Montes Claros (freguesia da Moita dos Ferreiros, concelho da Lourinhã). Juntos, plantaram <strong>675 árvores e arbustos nativos de 30 espécies</strong> numa área de 450 m².
+          </p>
+          <p style="margin-bottom: 1.5rem;">
+            O desafio nesta região é real: o vento atlântico constante, verões secos sem uma gota de chuva durante meses e solos pesados argilo-calcários que racham ao sol. Em vez de combater o clima, recorremos à sabedoria da floresta mediterrânica adaptando o <strong>Método Miyawaki</strong>.
+          </p>
+          
+          <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+            <a href="https://odslocal.pt/projetos/jardim-autoctone-dos-montes-claros-2318" target="_blank" rel="noopener noreferrer" class="badge badge-terracotta" style="cursor: pointer; text-decoration: none;">
+              🏅 Ficha Oficial ODSlocal Lourinhã (#2318) ↗
+            </a>
+            <span class="badge badge-forest">ODS 13 • Ação Climática</span>
+            <span class="badge badge-gold">ODS 15 • Proteger a Vida Terrestre</span>
+          </div>
+        </div>
+
+        <div class="archival-photo-frame" style="margin: 0;">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80" alt="Voluntários e plantação comunitária de árvores nativas">
+          <div class="archival-caption">
+            <span>23 de Novembro de 2024: Mais de 30 voluntários colocaram as mãos na terra</span>
+            <span class="archival-caption-badge">Fundação Comunitária</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO II: O JARDIM-FLORESTA AOS 2 ANOS ==================== -->
+  <section class="section bg-parchment" id="dois-anos">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo II • Evolução & Diário de Campo</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">24 Meses de Crescimento</span>
+        <h2>O Jardim-Floresta aos 2 Anos: O Que Mudou?</h2>
+        <p>
+          O método de floresta densa (Miyawaki adaptado) funciona como uma cooperativa subterrânea. As plantas competem amigavelmente pela luz enquanto partilham humidade e nutrientes pelas raízes.
+        </p>
+      </div>
+
+      <!-- Growth Stages Cards -->
+      <div class="grid-3" style="margin-bottom: 4rem;">
+        
+        <!-- Stage 1 -->
+        <div class="growth-stage-card">
+          <div class="growth-stage-media">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" alt="Terreno antes da plantação em 2024">
+            <span class="growth-tag">Mês 0 • Nov 2024</span>
+          </div>
+          <div class="growth-stage-body">
+            <h4>O Ponto de Partida</h4>
+            <p>
+              Solo compactado por anos de cultivo convencional. Descompactação suave sem inversão de camadas, incorporação de composto biológico maduro e aplicação de 15 cm de manta de palha (mulch). 675 pequenas mudas de 20 a 40 cm plantadas a 3 plantas/m².
+            </p>
+            <div class="growth-metrics-row">
+              <span>🌱 675 mudas</span>
+              <span>🍂 15 cm palha</span>
+              <span>📏 Altura média: 30 cm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="growth-stage-card">
+          <div class="growth-stage-media">
+            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" alt="Floresta no primeiro ano de enraizamento">
+            <span class="growth-tag">Ano 1 • Out 2025</span>
+          </div>
+          <div class="growth-stage-body">
+            <h4>O Enraizamento Invisível</h4>
+            <p>
+              O primeiro verão testou a resiliência. As espécies pioneiras (estevas, murtas e alecrins) arrancaram primeiro, criando barreiras de sombra e quebra-vento para os sobreiros e carvalhos. As raízes aprumadas procuraram humidade na profundidade da argila.
+            </p>
+            <div class="growth-metrics-row">
+              <span>💧 Rega mínima de apoio</span>
+              <span>🛡️ Resiliência estival</span>
+              <span>📏 Altura média: 90 cm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 (Featured Today) -->
+        <div class="growth-stage-card" style="border: 2px solid var(--forest-500);">
+          <div class="growth-stage-media">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Floresta densa hoje aos 2 anos">
+            <span class="growth-tag" style="background: var(--terracotta-500);">Hoje • Ano 2 (Outono 2026)</span>
+          </div>
+          <div class="growth-stage-body">
+            <h4>O Dossel Fecha-se</h4>
+            <p>
+              A copa começou a tocar-se. A luz direta já quase não atinge o solo, o que impede ervas oportunistas e preserva a humidade sob a manta morta. Medronheiros e murtas já deram os primeiros frutos e o retorno de pássaros, aranhas e micélio é diário.
+            </p>
+            <div class="growth-metrics-row">
+              <span>🍄 Micorrizas ativas</span>
+              <span>🐦 Polinizadores & aves</span>
+              <span>📏 Árvores até 2.4 metros</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Key Learnings Strip -->
+      <div style="background: #ffffff; border: 1px solid var(--parchment-300); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--forest-900);">
+          🔬 3 Grandes Aprendizagens destes 2 Anos de Jardim-Floresta
+        </h3>
+        <div class="grid-3" style="gap: 1.5rem; margin-top: 1.5rem;">
+          <div>
+            <h5 style="font-family: var(--font-sans); font-size: 1.05rem; color: var(--forest-800); margin-bottom: 0.5rem;">
+              1. A Palha Salva Vidas no Oeste
+            </h5>
+            <p style="font-size: 0.95rem; color: var(--bark-700);">
+              Sem cobertura de solo espessa (mulch), o sol do Oeste coze a argila e quebra raízes jovens. Manter 10-15 cm de biomassa reduziu a evaporação em mais de 70% no verão.
+            </p>
+          </div>
+          <div>
+            <h5 style="font-family: var(--font-sans); font-size: 1.05rem; color: var(--forest-800); margin-bottom: 0.5rem;">
+              2. Plantar Denso Trava o Vento
+            </h5>
+            <p style="font-size: 0.95rem; color: var(--bark-700);">
+              Árvores isoladas no concelho da Lourinhã sofrem severamente com o vento marítimo. Na nossa micro-floresta de 450 m², o grupo apoia-se mutuamente e cresce 3x mais rápido.
+            </p>
+          </div>
+          <div>
+            <h5 style="font-family: var(--font-sans); font-size: 1.05rem; color: var(--forest-800); margin-bottom: 0.5rem;">
+              3. O Medronheiro e a Murta são Heróis
+            </h5>
+            <p style="font-size: 0.95rem; color: var(--bark-700);">
+              Espécies nativas não precisam de mimos. Enquanto plantas exóticas definham, a murta e o medronheiro mantiveram folhas verdes lustrosas e produziram flores e frutos sem rega contínua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO III: OS 2 HECTARES (MAPEAMENTO INTERATIVO) ==================== -->
+  <section class="section" id="dois-hectares">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo III • A Propriedade de 2 Hectares</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">Plano do Terreno</span>
+        <h2>O Mosaico dos Nossos 2 Hectares em Montes Claros</h2>
+        <p>
+          Os 450 m² do jardim-floresta pioneiro são o núcleo fundador. Explore abaixo o esquema interativo de como estamos a estruturar o restante terreno de 20.000 m² (2 hectares).
+        </p>
+      </div>
+
+      <!-- Interactive SVG Schema & Detail Card -->
+      <div class="land-schema-container">
+        <div class="land-schema-wrapper">
+          
+          <!-- SVG Schematic Map -->
+          <div>
+            <svg class="svg-land-map" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mapa esquemático dos 2 hectares de Jardim dos Montes Claros">
+              <!-- Property Boundary -->
+              <rect x="20" y="20" width="760" height="480" rx="16" fill="#e9f0ea" stroke="#25422f" stroke-width="2" stroke-dasharray="8 6"/>
+              
+              <!-- Contour lines / Terraces -->
+              <path d="M 30,120 Q 250,90 500,130 T 770,110" fill="none" stroke="#cfdecb" stroke-width="2"/>
+              <path d="M 30,240 Q 280,210 520,260 T 770,230" fill="none" stroke="#cfdecb" stroke-width="2"/>
+              <path d="M 30,370 Q 300,340 550,390 T 770,360" fill="none" stroke="#cfdecb" stroke-width="2"/>
+
+              <!-- ZONE 4: Windbreak Buffer (Top & West Edge) -->
+              <path class="map-zone-interactive" data-zone="zone4" d="M 30,30 L 770,30 L 770,75 L 75,75 L 75,470 L 30,470 Z" fill="#477555" fill-opacity="0.35" stroke="#335940" stroke-width="2"/>
+              <text x="160" y="55" fill="#1b3022" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">4. Sebe Quebra-Vento Oceânica (180m)</text>
+
+              <!-- ZONE 1: The 2-Year Forest Garden (Miyawaki Nucleus) -->
+              <rect class="map-zone-interactive active-zone" data-zone="zone1" x="120" y="110" width="220" height="150" rx="10" fill="#25422f" fill-opacity="0.85" stroke="#d4a043" stroke-width="3"/>
+              <text x="140" y="150" fill="#fdfcf7" font-family="'Playfair Display', serif" font-size="16" font-weight="700">1. Jardim-Floresta (2 Anos)</text>
+              <text x="140" y="175" fill="#edd18c" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">450 m² • 675 mudas nativas</text>
+              <text x="140" y="195" fill="#e2ede4" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Método Miyawaki Adaptado</text>
+              <circle cx="310" cy="135" r="10" fill="#d4a043"/>
+              <text x="306" y="140" fill="#112015" font-family="sans-serif" font-size="12" font-weight="bold">★</text>
+
+              <!-- ZONE 2: Acorn Direct Seeding Trial -->
+              <rect class="map-zone-interactive" data-zone="zone2" x="370" y="110" width="230" height="150" rx="10" fill="#c66336" fill-opacity="0.35" stroke="#9e4624" stroke-width="2"/>
+              <text x="390" y="155" fill="#211e1b" font-family="'Playfair Display', serif" font-size="15" font-weight="600">2. Ensaio Sementeira</text>
+              <text x="390" y="178" fill="#7a736a" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">1.200 m² • Bolotas Diretas</text>
+              <text x="390" y="198" fill="#4a453f" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Estudo de Raiz Aprumada</text>
+
+              <!-- ZONE 3: Assisted Natural Regeneration -->
+              <rect class="map-zone-interactive" data-zone="zone3" x="120" y="290" width="280" height="160" rx="10" fill="#d4a043" fill-opacity="0.28" stroke="#b88636" stroke-width="2"/>
+              <text x="140" y="335" fill="#211e1b" font-family="'Playfair Display', serif" font-size="15" font-weight="600">3. Regeneração Natural</text>
+              <text x="140" y="358" fill="#7a736a" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">2.500 m² • Banco de Sementes</text>
+              <text x="140" y="378" fill="#4a453f" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Observação sem plantação ativa</text>
+
+              <!-- ZONE 5: Agroforestry & Diversity -->
+              <rect class="map-zone-interactive" data-zone="zone5" x="430" y="290" width="320" height="160" rx="10" fill="#689675" fill-opacity="0.2" stroke="#477555" stroke-width="2" stroke-dasharray="6 4"/>
+              <text x="450" y="335" fill="#211e1b" font-family="'Playfair Display', serif" font-size="15" font-weight="600">5. Zona Agroflorestal & Sequeiro</text>
+              <text x="450" y="358" fill="#7a736a" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">~13.000 m² restantes</text>
+              <text x="450" y="378" fill="#4a453f" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Futuras clareiras & pomar tradicional</text>
+
+              <!-- North Arrow Indicator -->
+              <g transform="translate(730, 90)">
+                <circle cx="0" cy="0" r="18" fill="#ffffff" stroke="#25422f" stroke-width="1.5"/>
+                <path d="M 0,-12 L 5,4 L 0,0 L -5,4 Z" fill="#c66336"/>
+                <text x="-4" y="-15" fill="#25422f" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">N</text>
+              </g>
+            </svg>
+            <div style="font-size: 0.78rem; color: var(--bark-500); margin-top: 0.75rem; text-align: center;">
+              💡 <em>Passe o rato ou clique em cada zona do mapa para inspecionar os detalhes e métodos no cartão ao lado.</em>
+            </div>
+          </div>
+
+          <!-- Dynamic Zone Details Card -->
+          <div class="zone-details-card" id="zone-details-box">
+            <span class="zone-badge" id="zone-badge">Núcleo Miyawaki • Estabelecido Nov. 2024</span>
+            <h3 id="zone-title">1. O Jardim-Floresta Pioneiro (2 Anos)</h3>
+            <p id="zone-desc">
+              O coração do projeto. Plantado a 23 de novembro de 2024 com o apoio de mais de 30 voluntários. Densidade de 3 a 5 plantas por m², solo enriquecido com composto orgânico e cobertura densa de palha. Aos 2 anos apresenta copa a fechar-se, auto-sombreamento e humidade constante sob a manta morta.
+            </p>
+
+            <div class="zone-specs-list">
+              <div class="zone-spec-item">
+                <strong>Área Intervencionada</strong>
+                <span id="zone-area">450 m²</span>
+              </div>
+              <div class="zone-spec-item">
+                <strong>Composição</strong>
+                <span id="zone-species">675 mudas (30+ espécies)</span>
+              </div>
+              <div class="zone-spec-item">
+                <strong>Método Aplicado</strong>
+                <span id="zone-method">Miyawaki Adaptado</span>
+              </div>
+              <div class="zone-spec-item">
+                <strong>Estado Atual (Ano 2)</strong>
+                <span id="zone-status">Autonomia hídrica em maturação</span>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/company/jardim-dos-montes-claros" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="width: 100%; justify-content: center;">
+              Ver Fotos no LinkedIn →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO IV: O ESTUDO COMPARATIVO ==================== -->
+  <section class="section bg-sage-tint" id="estudo">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo IV • Ciência Cidadã & Laboratório Vivo</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">Estudo de Campo • ~7.000 m²</span>
+        <h2>Qual a Melhor Forma de Reflorestar o Oeste Rural?</h2>
+        <p>
+          O Jardim dos Montes Claros acolhe um estudo comparativo empírico para testar três abordagens diferentes de regeneração e arborização nas condições reais do concelho da Lourinhã.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        
+        <!-- Approach 1 -->
+        <div class="study-card featured">
+          <span class="study-badge miyawaki">Abordagem A • Núcleo Pioneiro</span>
+          <h3>Método Miyawaki Adaptado</h3>
+          <p>
+            Plantação ultra-densa (3 a 5 mudas/m²) com mistura de estratos botânicos (dossel, sub-bosque, arbustivo e herbáceo) e descompactação de solo enriquecida com composto e palha.
+          </p>
+          <div class="study-findings">
+            <h5>Observações aos 2 Anos:</h5>
+            <ul>
+              <li>Crescimento em altura 2x a 3x mais rápido que o convencional.</li>
+              <li>Fecho de copa precoce que elimina necessidade de mondar ervas.</li>
+              <li>Excelente retenção de humidade sob a manta de palha.</li>
+              <li><em>Exigência:</em> Maior investimento inicial em mudas e mão-de-obra.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Approach 2 -->
+        <div class="study-card">
+          <span class="study-badge acorns">Abordagem B • Raiz Profunda</span>
+          <h3>Sementeira Direta de Bolotas</h3>
+          <p>
+            Bolotas de sobreiro e carvalho colhidas nas cercanias e semeadas diretamente na terra de sequeiro, sem recurso a vasos plásticos de viveiro nem regas artificiais.
+          </p>
+          <div class="study-findings">
+            <h5>Observações aos 2 Anos:</h5>
+            <ul>
+              <li>Raiz aprumada (pivotante) desce verticalmente sem qualquer espiralização.</li>
+              <li>Crescimento aéreo inicial mais lento, mas altíssima resistência à seca.</li>
+              <li>Custo por árvore quase nulo (recolha livre na época da bolota).</li>
+              <li><em>Exigência:</em> Proteção necessária contra roedores e aves nos primeiros meses.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Approach 3 -->
+        <div class="study-card">
+          <span class="study-badge natural">Abordagem C • Espontânea</span>
+          <h3>Regeneração Natural Assistida</h3>
+          <p>
+            Paragem total de lavouras e pastoreio agressivo para observar a resposta das sementes dormentes no banco de sementes histórico do solo do Oeste.
+          </p>
+          <div class="study-findings">
+            <h5>Observações aos 2 Anos:</h5>
+            <ul>
+              <li>Surgimento espontâneo de estevas, sargaços, giestas e gramíneas nativas.</li>
+              <li>Recuperação dos agregados do solo através das raízes das pioneiras.</li>
+              <li>Intervenção mínima (apenas corte selectivo de espécies invasoras).</li>
+              <li><em>Exigência:</em> Ritmo mais demorado para instalação de árvores de grande porte.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ODSlocal Official Interactive Project Card -->
+      <a href="https://odslocal.pt/projetos/jardim-autoctone-dos-montes-claros-2318" target="_blank" rel="noopener noreferrer" class="ods-official-card">
+        <div class="ods-official-left">
+          <div class="ods-official-badges-stack">
+            <div class="ods-square ods-13" style="width: 36px; height: 36px; font-size: 0.95rem;">13</div>
+            <div class="ods-square ods-15" style="width: 36px; height: 36px; font-size: 0.95rem;">15</div>
+          </div>
+          <div>
+            <div class="ods-official-title">Jardim Autóctone dos Montes Claros • Registo Oficial ODSlocal #2318</div>
+            <div class="ods-official-sub">Plataforma Municipal dos Objetivos de Desenvolvimento Sustentável • Lourinhã</div>
+          </div>
+        </div>
+        <span class="btn btn-outline btn-sm" style="white-space: nowrap;">
+          Abrir Ficha do Projeto na ODSlocal →
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO V: AS ESPÉCIES AUTÓCTONES ==================== -->
+  <section class="section" id="especies">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo V • Catálogo Botânico Real</span>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">Flora do Jardim-Floresta</span>
+        <h2>As Espécies Nativas que Formam o Nosso Bosque</h2>
+        <p>
+          Não plantámos relva nem plantas ornamentais exóticas sedentas de água. Cada árvore e arbusto foi escolhido por pertencer à flora espontânea do Oeste de Portugal.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div style="display: flex; justify-content: center; gap: 0.65rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+        <button class="btn btn-outline btn-sm species-filter-btn active" data-type="all">Todas as 30+ Espécies</button>
+        <button class="btn btn-outline btn-sm species-filter-btn" data-type="canopy">Dossel (Sobreiro & Carvalhos)</button>
+        <button class="btn btn-outline btn-sm species-filter-btn" data-type="understory">Sub-bosque (Medronheiro, Loureiro)</button>
+        <button class="btn btn-outline btn-sm species-filter-btn" data-type="shrub">Arbustos & Bagas (Murta, Pilriteiro)</button>
+        <button class="btn btn-outline btn-sm species-filter-btn" data-type="aromatic">Aromáticas & Pioneiras (Alecrim, Esteva)</button>
+      </div>
+
+      <!-- Injected Grid via js/mvp.js -->
+      <div class="grid-3" id="mvp-species-grid">
+        <!-- Javascript renders 12 detailed native species cards here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CAPÍTULO VI: VOLUNTARIADO & MÃOS NA TERRA ==================== -->
+  <section class="section" id="voluntariado">
+    <div class="container">
+      <div class="editorial-chapter-mark">
+        <span>Capítulo VI • Comunidade & Participação</span>
+      </div>
+
+      <div class="volunteer-cta-box">
+        <div class="volunteer-cta-content">
+          <span class="eyebrow" style="color: var(--gold-300);">Mãos na Terra</span>
+          <h2>Esta Floresta Só Existe Porque Nos Juntámos</h2>
+          <p>
+            O Jardim dos Montes Claros foi erguido pelo esforço generoso de mais de 30 voluntários num sábado de outono. Ao longo do ano organizamos jornadas práticas no terreno: reforço de palha, podas de condução, sementeira de bolotas e sessões de partilha e observação botânica.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.6rem;">
+              <span style="color: var(--gold-300); font-weight: bold;">✓</span>
+              <span><strong>Jornadas Sazonais de Voluntariado:</strong> Abertas a famílias, jovens e vizinhos.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.6rem;">
+              <span style="color: var(--gold-300); font-weight: bold;">✓</span>
+              <span><strong>Visitas Pedagógicas & Troca de Sementes:</strong> Para curiosos, escolas e regeneradores.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.6rem;">
+              <span style="color: var(--gold-300); font-weight: bold;">✓</span>
+              <span><strong>Acompanhamento no LinkedIn:</strong> Diário de campo com fotos e dados reais.</span>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/company/jardim-dos-montes-claros" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Junte-se à Comunidade no LinkedIn
+          </a>
+        </div>
+
+        <!-- Form Wrapper -->
+        <div class="volunteer-form-wrap">
+          <h4>Inscrever-se para Próximas Ações</h4>
+          <p>Avise-me quando houver novas jornadas de plantação ou visitas ao terreno em Montes Claros.</p>
+          
+          <form id="volunteer-signup-form">
+            <div class="form-group-mvp">
+              <label for="vol-name">Nome Completo</label>
+              <input type="text" id="vol-name" name="name" class="form-control-mvp" placeholder="Ex: Maria Santos" required>
+            </div>
+
+            <div class="form-group-mvp">
+              <label for="vol-email">Email de Contacto</label>
+              <input type="email" id="vol-email" name="email" class="form-control-mvp" placeholder="maria@exemplo.pt" required>
+            </div>
+
+            <div class="form-group-mvp">
+              <label for="vol-role">Como gostaria de colaborar?</label>
+              <select id="vol-role" name="role" class="form-control-mvp">
+                <option value="volunteer">Voluntariado em jornadas de plantação e manutenção</option>
+                <option value="visit">Visita de estudo / Partilha técnica e botânica</option>
+                <option value="seeds">Doação / Troca de sementes e bolotas locais</option>
+                <option value="partner">Parceria escolar / Institucional / ODS</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-terracotta" style="width: 100%; margin-top: 0.5rem;">
+              🌱 Quero Fazer Parte do Jardim
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <img src="images/logo/logo.png" alt="Logo Jardim dos Montes Claros" class="brand-logo-img footer-logo-img">
+            <div class="brand-text">
+              Jardim dos Montes Claros
+              <small>Lourinhã • Região Oeste de Portugal</small>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; line-height: 1.6; max-width: 320px;">
+            Um projeto comunitário e de regeneração ambiental fundado por Miguel e Rita a 23 de novembro de 2024. Criando florestas autóctones resilientes no Oeste português.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#dois-anos">O Jardim aos 2 Anos</a></li>
+            <li><a href="#dois-hectares">Mapeamento dos 2 Hectares</a></li>
+            <li><a href="#estudo">Estudo Comparativo (~7.000 m²)</a></li>
+            <li><a href="#especies">Espécies Nativas do Oeste</a></li>
+            <li><a href="#voluntariado">Jornadas de Voluntariado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Comunidade & Registo</h4>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/company/jardim-dos-montes-claros" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                Página Oficial no LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://odslocal.pt/projetos/jardim-autoctone-dos-montes-claros-2318" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                🏅 Ficha Oficial ODSlocal #2318
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Localização</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+            📍 Montes Claros, Moita dos Ferreiros<br>
+            2530 Lourinhã, Região Oeste, Portugal
+          </p>
+          <div style="font-size: 0.82rem; color: var(--sage-300);">
+            Alinhado com a plataforma ODSlocal Lourinhã nos ODS 13 (Ação Climática) e ODS 15 (Proteger a Vida Terrestre).
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024–2026 Jardim dos Montes Claros. Projeto de conservação e regeneração ambiental no Oeste de Portugal.</p>
+        <p style="font-size: 0.8rem; color: var(--bark-500);">
+          Feito com terra, palha e comunidade.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/mvp.js"></script>
+</body>
 </html>

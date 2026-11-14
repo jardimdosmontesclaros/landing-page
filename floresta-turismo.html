@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floresta, Trilhos & Ecoturismo | Experiências na Quinta • Jardins Claros</title>
+  <meta name="description" content="Visite a nossa floresta protegida de 45 hectares. Trilhos pedestres entre sobreiros centenários, piqueniques sob os pinhais, workshops de propagação e visitas botânicas.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/trails.css">
+</head>
+<body>
+
+  <!-- ==================== VISION CONCEPT BANNER ==================== -->
+  <div style="background: var(--forest-900); color: var(--parchment-50); padding: 0.65rem 1rem; font-size: 0.85rem; text-align: center; border-bottom: 1px solid rgba(212, 160, 67, 0.4); display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>🌲 <strong>Visão de Futuro:</strong> Conceito de Trilhos, Ecoturismo & Casa de Chá planeado para a expansão da herdade.</span>
+    <a href="index.html" style="background: var(--gold-500); color: var(--forest-900); font-weight: 700; padding: 0.2rem 0.75rem; border-radius: 9999px; text-decoration: none; font-size: 0.78rem;">
+      ← Voltar ao Jardim dos Montes Claros (MVP)
+    </a>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Jardins Claros - Início">
+        <div class="brand-emblem">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L12 22"/><path d="M17 5C17 5 13 8 13 13C13 18 17 21 17 21"/><path d="M7 5C7 5 11 8 11 13C11 18 7 21 7 21"/></svg>
+        </div>
+        <div class="brand-text">
+          Jardins Claros
+          <small>Quinta Botânica • Desde 1892</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="passado.html" class="nav-link">O Nosso Passado</a>
+        <a href="viveiro.html" class="nav-link">Viveiro Autóctone</a>
+        <a href="floresta-turismo.html" class="nav-link active">Floresta & Trilhos</a>
+        <a href="#experiencias" class="nav-link">Experiências</a>
+        <a href="#visita" class="nav-link">Planear Visita</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="soundscape-toggle" title="Ativar paisagem sonora da floresta">
+          <div class="sound-waves">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-label">Ouvir a Floresta</span>
+        </button>
+
+        <div class="lang-switch">
+          <button class="lang-btn active">PT</button>
+          <span>/</span>
+          <button class="lang-btn">EN</button>
+        </div>
+
+        <button class="btn btn-terracotta btn-sm open-booking-btn" data-experience="tour">
+          Reservar Experiência
+        </button>
+
+        <button class="mobile-toggle" aria-label="Abrir Menu Móvel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="experience-hero">
+    <div class="experience-hero-content">
+      <span class="eyebrow" style="color: var(--gold-300);">Hospitalidade & Natureza Viva</span>
+      <h1>A Floresta Encantada de Jardins Claros</h1>
+      <p>
+        45 hectares de refúgio botânico onde o tempo abranda. Respire o ar puro dos pinhais mansos, escute a água nas levadas e desfrute de momentos inesquecíveis à mesa ou nos trilhos.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#mapa-trilhos" class="btn btn-primary">Ver Mapa Interativo dos Trilhos</a>
+        <a href="#experiencias" class="btn btn-outline-light">Experiências & Provas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE TRAILS MAP (National Trust inspired) ==================== -->
+  <section class="section" id="mapa-trilhos">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow forest">Orientação & Pontos Notáveis</span>
+        <h2>Mapa Interativo da Herdade & Mata Secular</h2>
+        <p>
+          Clique nos pontos notáveis do mapa para descobrir o que torna cada recanto de Jardins Claros tão singular — da árvore mais antiga às nascentes de água pura.
+        </p>
+      </div>
+
+      <div class="interactive-map-section">
+        <div class="map-layout">
+          <!-- Interactive SVG Vector Map -->
+          <div class="map-svg-wrapper">
+            <svg viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa Ilustrado dos Trilhos de Jardins Claros">
+              <!-- Background Forest Canvas -->
+              <rect width="800" height="520" fill="#f2f7f3" rx="12"/>
+              
+              <!-- Contour Lines / Topography -->
+              <path d="M 50 120 Q 300 80 500 130 T 750 160" stroke="#d5e5d8" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+              <path d="M 30 220 Q 250 180 480 240 T 780 270" stroke="#d5e5d8" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+              <path d="M 60 360 Q 320 320 540 370 T 740 400" stroke="#d5e5d8" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+
+              <!-- Forest Canopy Patches -->
+              <path d="M 120 70 C 180 40 280 60 260 140 C 240 210 140 190 100 150 C 70 120 80 85 120 70 Z" fill="#335940" fill-opacity="0.2"/>
+              <path d="M 450 140 C 560 100 680 140 650 250 C 620 330 480 300 440 240 C 410 190 420 160 450 140 Z" fill="#335940" fill-opacity="0.25"/>
+              <path d="M 180 280 C 260 250 350 270 340 360 C 320 420 220 430 170 380 C 140 340 145 300 180 280 Z" fill="#335940" fill-opacity="0.2"/>
+
+              <!-- Water Spring & Levada stream -->
+              <path d="M 320 160 Q 380 220 350 310 T 360 470" stroke="#5b92b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <text x="375" y="270" fill="#5b92b6" font-size="12" font-weight="600" font-family="sans-serif">Levada de Pedra</text>
+
+              <!-- Trail 1: Sobreiros (Gold) -->
+              <path d="M 140 440 C 120 330 180 210 240 140 C 280 90 420 100 480 150 C 520 190 460 280 420 350 C 370 430 200 450 140 440 Z" 
+                    stroke="#d4a043" stroke-width="3" stroke-dasharray="6 4" fill="none"/>
+
+              <!-- Trail 2: Aromas (Terracotta) -->
+              <path d="M 240 140 C 340 110 520 90 620 130 C 690 160 670 260 600 310 C 530 350 440 260 380 220" 
+                    stroke="#c66336" stroke-width="3" stroke-dasharray="6 4" fill="none"/>
+
+              <!-- Trail 3: Levadas (Blue) -->
+              <path d="M 260 460 C 310 390 320 280 320 180" 
+                    stroke="#477555" stroke-width="3" stroke-dasharray="6 4" fill="none"/>
+
+              <!-- Interactive Clickable Waypoint 1: Sobreiro Patriarca -->
+              <g class="map-waypoint-btn active" data-point="sobreiro" transform="translate(240, 140)">
+                <circle cx="0" cy="0" r="16" fill="#1b3022" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="0" cy="0" r="7" fill="#d4a043"/>
+                <text x="22" y="5" font-family="serif" font-weight="700" font-size="14" fill="#112015">1. Sobreiro Patriarca (320 anos)</text>
+              </g>
+
+              <!-- Interactive Clickable Waypoint 2: Fonte das Levadas -->
+              <g class="map-waypoint-btn" data-point="levadas" transform="translate(320, 180)">
+                <circle cx="0" cy="0" r="14" fill="#5b92b6" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+                <text x="20" y="5" font-family="sans-serif" font-weight="600" font-size="12" fill="#1b3022">2. Fonte das Levadas</text>
+              </g>
+
+              <!-- Interactive Clickable Waypoint 3: Miradouro dos Aromas -->
+              <g class="map-waypoint-btn" data-point="miradouro" transform="translate(620, 130)">
+                <circle cx="0" cy="0" r="14" fill="#c66336" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+                <text x="-160" y="-12" font-family="sans-serif" font-weight="600" font-size="12" fill="#1b3022">3. Miradouro dos Aromas (210m)</text>
+              </g>
+
+              <!-- Interactive Clickable Waypoint 4: Estufas Históricas -->
+              <g class="map-waypoint-btn" data-point="estufas" transform="translate(180, 420)">
+                <circle cx="0" cy="0" r="14" fill="#335940" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+                <text x="20" y="5" font-family="sans-serif" font-weight="600" font-size="12" fill="#1b3022">4. Estufas de Propagação (1892)</text>
+              </g>
+
+              <!-- Interactive Clickable Waypoint 5: Prado dos Pinhais -->
+              <g class="map-waypoint-btn" data-point="prado" transform="translate(420, 370)">
+                <circle cx="0" cy="0" r="14" fill="#b88636" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+                <text x="20" y="5" font-family="sans-serif" font-weight="600" font-size="12" fill="#1b3022">5. Prado dos Pinhais & Casa de Chá</text>
+              </g>
+            </svg>
+
+            <!-- Map Legend Strip -->
+            <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 1rem; font-size: 0.82rem; color: var(--bark-700); flex-wrap: wrap;">
+              <span style="display: flex; align-items: center; gap: 0.35rem;">
+                <span style="width: 14px; height: 3px; background: #d4a043; display: inline-block;"></span> Trilho dos Sobreiros
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.35rem;">
+                <span style="width: 14px; height: 3px; background: #c66336; display: inline-block;"></span> Rota dos Aromas
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.35rem;">
+                <span style="width: 14px; height: 3px; background: #477555; display: inline-block;"></span> Caminho das Levadas
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.35rem;">
+                <span style="width: 14px; height: 3px; background: #5b92b6; display: inline-block;"></span> Linha de Água / Levada
+              </span>
+            </div>
+          </div>
+
+          <!-- Waypoint Live Details Panel (JS populated) -->
+          <div class="waypoint-details-card" id="waypoint-details-display">
+            <span class="waypoint-badge">Ponto Botânico Notável</span>
+            <h4>O Sobreiro Patriarca</h4>
+            <p style="font-size: 0.88rem; color: var(--terracotta-500); font-weight: 600; margin-bottom: 0.75rem;">Monumento Vivo • 320 Anos</p>
+            <p>O mais antigo ser vivo da Herdade de Jardins Claros. Uma árvore majestosa com copa de 28 metros de diâmetro que sobreviveu a sismos e secas, funcionando como âncora biológica da floresta.</p>
+            <div class="waypoint-meta-list">
+              <div>⛰️ <strong>Altitude:</strong> 142 m</div>
+              <div>🦅 <strong>Fauna Observável:</strong> Coruja-das-torres, Pica-pau-malhado, Morcego-de-ferradura</div>
+              <div>🎧 <strong>Audioguia:</strong> Áudio Guia #01 (3:15 min)</div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <button class="btn btn-outline btn-sm" onclick="window.showToast('🎧 A carregar audioguia do Sobreiro Patriarca...')">
+                Ouvir Audioguia no Local
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 3 CURATED TRAILS CARDS ==================== -->
+      <div class="grid-3" style="margin-top: 3.5rem;">
+        
+        <!-- Trail 1 -->
+        <article class="trail-card">
+          <div class="trail-card-media">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80" alt="Trilho dos Sobreiros Centenários">
+            <span class="trail-difficulty easy">Fácil • Familiar</span>
+          </div>
+          <div class="trail-card-body">
+            <h3>Trilho dos Sobreiros Centenários</h3>
+            <p>
+              Circuito circular suave sob a copa densa dos sobreiros e carvalhos seculares. Ideal para famílias com crianças e admiradores de árvores monumentais.
+            </p>
+            <div class="trail-stats">
+              <div>
+                <span class="trail-stat-val">2.8 km</span>
+                <span class="trail-stat-label">Distância</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">45 min</span>
+                <span class="trail-stat-label">Duração</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">+45 m</span>
+                <span class="trail-stat-label">Desnível</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trail 2 -->
+        <article class="trail-card">
+          <div class="trail-card-media">
+            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80" alt="Rota dos Aromas">
+            <span class="trail-difficulty moderate">Moderado • Paisagístico</span>
+          </div>
+          <div class="trail-card-body">
+            <h3>Rota dos Aromas & Medronheiros</h3>
+            <p>
+              Sobe em crista até ao Miradouro dos Aromas através de encostas floridas de esteva e tomilho bravo, recompensando com vista panorâmica sobre o oceano.
+            </p>
+            <div class="trail-stats">
+              <div>
+                <span class="trail-stat-val">4.2 km</span>
+                <span class="trail-stat-label">Distância</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">1h 20m</span>
+                <span class="trail-stat-label">Duração</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">+125 m</span>
+                <span class="trail-stat-label">Desnível</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trail 3 -->
+        <article class="trail-card">
+          <div class="trail-card-media">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Caminho das Levadas">
+            <span class="trail-difficulty easy">Fácil • Acessível</span>
+          </div>
+          <div class="trail-card-body">
+            <h3>Caminho das Levadas & Sombras</h3>
+            <p>
+              Acompanha as antigas caleiras de pedra onde corre água de nascente natural. Caminho plano, fresco e ladeado por fetos raros e moitas de murta aromática.
+            </p>
+            <div class="trail-stats">
+              <div>
+                <span class="trail-stat-val">1.8 km</span>
+                <span class="trail-stat-label">Distância</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">35 min</span>
+                <span class="trail-stat-label">Duração</span>
+              </div>
+              <div>
+                <span class="trail-stat-val">+18 m</span>
+                <span class="trail-stat-label">Desnível</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCES CATALOG (Concannon Vineyard hospitality inspiration) ==================== -->
+  <section class="section bg-parchment" id="experiencias">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Hospitalidade de Herdade</span>
+        <h2>Experiências Botânicas & Gastronómicas</h2>
+        <p>
+          Inspire-se na tradição das grandes quintas europeias. Reserve uma experiência guiada ou um momento exclusivo sob a copa dos pinhais centenários.
+        </p>
+      </div>
+
+      <!-- Experience 1 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80" alt="Visita Botânica Guiada">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Visita Guiada & Degustação</span>
+          <h3>Passeio Botânico & Prova de Infusões da Floresta</h3>
+          <p>
+            Acompanhe um dos nossos mestres botânicos por entre os sobreirais e as levadas de pedra. Descubra como os ecossistemas nativos sobrevivem sem rega e finalize com uma degustação comentada de 3 infusões silvestres e bolos tradicionais de bolota e medronho.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🕒 Duração: 2 horas</span>
+            <span class="experience-perk-item">👥 Grupos reduzidos (máx. 12 pessoas)</span>
+            <span class="experience-perk-item">🫖 Prova comentada incluída</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€28 <span>/ participante</span></div>
+            <button class="btn btn-primary btn-sm open-booking-btn" data-experience="tour">Reservar Visita</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1200&q=80" alt="Workshop no Viveiro">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Oficina Prática de Jardinagem</span>
+          <h3>Workshop de Propagação & Poda de Nativas</h3>
+          <p>
+            Mãos na terra nas estufas históricas de 1892. Aprenda técnicas ancestrais de estratificação de bolotas, estacaria de aromáticas e poda de condução sem stress hídrico. Cada participante leva para casa 2 mudas envasadas de sobreiro ou medronheiro.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🕒 Duração: 3 horas</span>
+            <span class="experience-perk-item">🪴 Inclui 2 mudas envasadas</span>
+            <span class="experience-perk-item">🧤 Materiais e avental fornecidos</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€45 <span>/ participante</span></div>
+            <button class="btn btn-primary btn-sm open-booking-btn" data-experience="workshop">Inscrever no Workshop</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80" alt="Piquenique Gourmet">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Gastronomia no Pinhal</span>
+          <h3>Piquenique Gourmet na Sombra dos Pinhais</h3>
+          <p>
+            Entregamos-lhe um cesto de verga tradicional com toalha de linho e loiça de cerâmica rústica num dos recantos privativos da nossa clareira de pinheiros-mansos. Saboreie queijos da serra, pão de massa-mãe, conservas artesanais, azeitonas bravas e néctar de fruta de época.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🧺 Cesto farto para 2 adultos</span>
+            <span class="experience-perk-item">🌲 Localização isolada e sombreada</span>
+            <span class="experience-perk-item">🍷 Opção de vinho biológico regional</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€65 <span>/ cesto p/ 2</span></div>
+            <button class="btn btn-terracotta btn-sm open-booking-btn" data-experience="picnic">Reservar Cesto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 4 -->
+      <div class="experience-card">
+        <div class="experience-card-media">
+          <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1200&q=80" alt="Imersão Noturna na Mata">
+        </div>
+        <div class="experience-card-body">
+          <span class="experience-tag">Biodiversidade ao Luar</span>
+          <h3>Imersão Noturna & Observação de Fauna</h3>
+          <p>
+            Uma caminhada sensorial após o pôr-do-sol equipada com detetores ultrassónicos de morcegos e lanternas de luz vermelha não invasivas. Ouça o chamamento das corujas-das-torres e sinta as fragrâncias que as plantas libertam apenas sob o manto da noite.
+          </p>
+          <div class="experience-perks">
+            <span class="experience-perk-item">🕒 Duração: 2 horas (Início 20h30)</span>
+            <span class="experience-perk-item">🦇 Detetores de bioacústica incluídos</span>
+            <span class="experience-perk-item">☕ Chá quente servido na estufa</span>
+          </div>
+          <div class="experience-action-row">
+            <div class="experience-price">€35 <span>/ participante</span></div>
+            <button class="btn btn-primary btn-sm open-booking-btn" data-experience="night">Reservar Sessão Noturna</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TEAHOUSE & BOTANICAL TASTING ROOM ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div>
+          <span class="eyebrow forest">Da Terra para a Mesa</span>
+          <h2>A Casa de Chá das Estufas</h2>
+          <p class="lead-text" style="margin-bottom: 1.25rem;">
+            Sabores rústicos, infusões colhidas na herdade e descanso absoluto no coração das antigas estufas de ferro de 1892.
+          </p>
+          <p style="margin-bottom: 1.5rem;">
+            Instalada na antiga ala envidraçada de propagação botânica, a nossa Casa de Chá serve infusões de rosmaninho, murta e tomilho-limão secos à sombra, mel biológico das nossas colmeias e broas caseiras de milho e bolota.
+          </p>
+          <div style="background: var(--parchment-100); padding: 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--forest-600); margin-bottom: 1.5rem;">
+            <strong style="color: var(--forest-900);">Especialidades da Estação:</strong>
+            <ul style="margin-top: 0.5rem; font-size: 0.92rem; color: var(--bark-700); line-height: 1.6;">
+              <li>• Infusão das Levadas: Murta selvagem, folhas de laranjeira amarga e flor de esteva</li>
+              <li>• Tisana Noturna: Lavandula stoechas e poejo de nascente</li>
+              <li>• Tábua Rústica de Queijos de Ovelha com Doce de Medronho da Quinta</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--bark-500);">Aberto de terça a domingo, das 10h00 às 18h30. Não necessita de reserva prévia para consumo na cafetaria.</p>
+        </div>
+
+        <div style="border-radius: var(--radius-lg); overflow: hidden; height: 460px; box-shadow: var(--shadow-lg);">
+          <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=80" alt="Casa de Chá das Estufas" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRACTICAL VISITOR GUIDE ==================== -->
+  <section class="section bg-sage-tint" id="visita">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow forest">Informações Práticas</span>
+        <h2>Como Chegar & Recomendações de Visita</h2>
+        <p>Jardins Claros situa-se entre o mar de Carcavelos e a serra, a curta distância de Lisboa e Cascais.</p>
+      </div>
+
+      <div class="grid-3">
+        <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--parchment-300);">
+          <h4 style="color: var(--forest-900); margin-bottom: 0.75rem;">🚆 De Transportes Públicos</h4>
+          <p style="font-size: 0.95rem; color: var(--bark-700); margin-bottom: 1rem;">
+            Linha de comboios de Cascais (saída na estação de Carcavelos ou Oeiras). A partir da estação, existe uma ciclovia direta de 1.2 km até aos portões da Quinta.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--forest-600); font-weight: 600;">Tempo médio de viagem desde Cais do Sodré: 22 minutos.</span>
+        </div>
+
+        <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--parchment-300);">
+          <h4 style="color: var(--forest-900); margin-bottom: 0.75rem;">🚗 De Automóvel & Estacionamento</h4>
+          <p style="font-size: 0.95rem; color: var(--bark-700); margin-bottom: 1rem;">
+            Acesso rápido via A5 (saída Carcavelos) ou pela Estrada Marginal N6. Parque arborizado privativo com capacidade para 60 viaturas.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--forest-600); font-weight: 600;">⚡ 4 postos de carregamento elétrico ultrarrápido gratuitos.</span>
+        </div>
+
+        <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--parchment-300);">
+          <h4 style="color: var(--forest-900); margin-bottom: 0.75rem;">🌿 Código de Respeito Florestal</h4>
+          <p style="font-size: 0.95rem; color: var(--bark-700); margin-bottom: 1rem;">
+            Proibido fazer fogo ou fumar em toda a área florestal. Por favor mantenha-se nos trilhos balizados para não pisar plântulas jovens de sobreiro.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--forest-600); font-weight: 600;">🐾 Animais de companhia são bem-vindos com trela.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING WIZARD DIALOG ==================== -->
+  <dialog class="modal-dialog" id="booking-dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="close-booking-dialog" aria-label="Fechar">✕</button>
+      
+      <div class="booking-step-indicator">
+        <div class="step-bubble active">1</div>
+        <div class="step-bubble">2</div>
+        <div class="step-bubble">3</div>
+      </div>
+
+      <!-- Step 1: Experience & Date -->
+      <div class="booking-form-step active" data-step="1">
+        <span class="eyebrow">Passo 1 de 3</span>
+        <h3 style="margin-bottom: 1.5rem;">Escolher Experiência & Data</h3>
+
+        <div class="form-group">
+          <label for="book-experience-select">Experiência Desejada</label>
+          <select id="book-experience-select" class="form-control">
+            <option value="tour">Passeio Botânico Guiado & Degustação (€28/pessoa)</option>
+            <option value="workshop">Workshop de Propagação no Viveiro (€45/pessoa)</option>
+            <option value="picnic">Piquenique Gourmet nos Pinhais (€65/cesto p/ 2)</option>
+            <option value="night">Imersão Noturna & Fauna Silvestre (€35/pessoa)</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="book-date-input">Data da Visita</label>
+            <input type="date" id="book-date-input" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="book-time-select">Horário</label>
+            <select id="book-time-select" class="form-control">
+              <option value="10:30">10h30 (Manhã)</option>
+              <option value="14:30">14h30 (Tarde)</option>
+              <option value="17:00">17h00 (Pôr-do-Sol)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="book-guests-input">Número de Participantes</label>
+          <input type="number" id="book-guests-input" class="form-control" value="2" min="1" max="12">
+        </div>
+
+        <div style="text-align: right; margin-top: 2rem;">
+          <button class="btn btn-primary" onclick="nextBookingStep(1)">
+            Continuar para Dados Pessoais →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Personal Details -->
+      <div class="booking-form-step" data-step="2">
+        <span class="eyebrow">Passo 2 de 3</span>
+        <h3 style="margin-bottom: 1.5rem;">Os Seus Dados para Confirmação</h3>
+
+        <div id="booking-step2-summary" class="booking-summary-box">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="form-group">
+          <label for="book-name-input">Nome Completo</label>
+          <input type="text" id="book-name-input" class="form-control" placeholder="Ex: Maria Santos">
+        </div>
+
+        <div class="form-group">
+          <label for="book-email-input">Endereço de Email</label>
+          <input type="email" id="book-email-input" class="form-control" placeholder="maria@exemplo.pt">
+        </div>
+
+        <div class="form-group">
+          <label for="book-notes-input">Restrições Alimentares ou Pedidos Especiais (Opcional)</label>
+          <textarea id="book-notes-input" class="form-control" rows="2" placeholder="Vegetariano, mobilidade reduzida, etc."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+          <button class="btn btn-outline" onclick="openBookingStep(1)">← Voltar</button>
+          <button class="btn btn-terracotta" onclick="nextBookingStep(2)">Confirmar Pré-Reserva</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Confirmation -->
+      <div class="booking-form-step" data-step="3">
+        <div id="booking-confirmation-details">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <div class="brand-emblem" style="background: rgba(255, 255, 255, 0.1); color: var(--gold-300);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L12 22"/><path d="M17 5C17 5 13 8 13 13C13 18 17 21 17 21"/><path d="M7 5C7 5 11 8 11 13C11 18 7 21 7 21"/></svg>
+            </div>
+            Jardins Claros
+          </div>
+          <p>Santuário botânico e de ecoturismo regenerativo. Conectando pessoas e árvores centenárias desde 1892.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Trilhos & Quinta</h4>
+          <ul class="footer-links">
+            <li><a href="#mapa-trilhos">Mapa dos Trilhos</a></li>
+            <li><a href="#experiencias">Experiências Guiadas</a></li>
+            <li><a href="viveiro.html">Viveiro Autóctone</a></li>
+            <li><a href="passado.html">História da Herdade</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visitas & Reservas</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+351219000000">+351 219 000 000</a></li>
+            <li><a href="mailto:visitas@jardinsclaros.pt">visitas@jardinsclaros.pt</a></li>
+            <li style="color: var(--sage-300); margin-top: 0.5rem;">Estrada das Levadas, 42 • Carcavelos, Portugal</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Boletim das Quatro Estações</h4>
+          <p>Receba avisos de floração e datas de eventos botânicos especiais.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('🌿 Obrigado por subscrever o boletim!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="O seu email" required>
+            <button type="submit" class="btn btn-terracotta btn-sm">Subscrever</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Jardins Claros — Floresta & Ecoturismo Regenerativo.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Início</a>
+          <a href="passado.html">O Nosso Passado</a>
+          <a href="viveiro.html">Viveiro</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/trails-booking.js"></script>
+</body>
+</html>
